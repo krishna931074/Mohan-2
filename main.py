@@ -77,27 +77,26 @@ async def main():
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       "𝐇𝐞𝐥𝐥𝐨 ❤️\n\n◆〓◆ ❖ ★·.·´¯`·.·★   🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷😍𝓎 𝑅🍩𝒽𝒾𝓉  🎀   ★·.·`¯´·.·★
-🎀 𝑅☯𝒽𝒾𝓉  🎀 ❖ ™ ◆〓◆\n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /STRANGER Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+       "饾悋饾悶饾惀饾惀饾惃 鉂わ笍\n\n鈼嗐�撯梿 鉂� (炉`路.赂赂.-> 掳潞   馃巰  饾挮饾挾饾搰饾捁饾憭饾憭饾搮馃挐饾挗饾挾饾搳饾搰饾捑馃挃饾憛馃挒饾捊饾捑饾搲  馃巰   潞掳 >-.赂赂.路`炉( 鉂� 鈩� 鈼嗐�撯梿\n\n鉂� I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me 鉄� /GAURI Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/+gnmRbwms4jg0MDg1") ],
+                    InlineKeyboardButton("鉁� 饾悏饾惃饾悽饾惂 饾悢饾惄饾悆饾悮饾惌饾悶 饾悅饾悺饾悮饾惂饾惂饾悶饾惀 鉁�" ,url=f"https://t.me/+gnmRbwms4jg0MDg1") ],
                     [
-                    InlineKeyboardButton("✜ @Strangerboy27_bot_strangerboy ✜" ,url="https://t.me/Strangerboy27_bot_strangerboy") ],
+                    InlineKeyboardButton("鉁� Pradeep1804馃┓ 鉁�" ,url="https://t.me/Pradeep1804") ],
                     [
-                    InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/+XJFAdIa3Vw5iN2M9") ]                               
+                    InlineKeyboardButton("馃 饾悈饾惃饾惀饾惀饾惃饾惏 饾悓饾悶 馃" ,url="https://t.me/+XJFAdIa3Vw5iN2M9") ]                               
             ]))
 
 @bot.on_message(filters.command(["stop"]))
 async def restart_handler(_, m):
-    await m.reply_text("♦ 𝐒𝐭𝐨𝐩𝐩𝐞𝐭 ♦", True)
+    await m.reply_text("鈾� 饾悞饾惌饾惃饾惄饾惄饾悶饾惌 鈾�", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
 
-@bot.on_message(filters.command(["STRANGER"]))
+@bot.on_message(filters.command(["GAURI"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('🐧  🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷💞𝓎 𝑅☯𝒽𝒾𝓉  Send here txt file  🎀  🐧 ⏍')
+    editable = await m.reply_text('stranger 馃グ饾悡饾惃 饾悆饾惃饾惏饾惂饾惀饾惃饾悮饾悵 饾悁 饾悡饾惐饾惌 饾悈饾悽饾惀饾悶 饾悞饾悶饾惂饾悵 饾悋饾悶饾惈饾悶 鈴�')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -123,11 +122,11 @@ async def account_login(bot: Client, m: Message):
        print(len(links))
     
     except:
-           await m.reply_text("∝ 𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐟𝐢𝐥𝐞 𝐢𝐧𝐩𝐮𝐭.")
+           await m.reply_text("鈭� 饾悎饾惂饾惎饾悮饾惀饾悽饾悵 饾悷饾悽饾惀饾悶 饾悽饾惂饾惄饾惍饾惌.")
            os.remove(x)
            return
    
-    await editable.edit(f"∝ 𝐓𝐨𝐭𝐚𝐥 𝐋𝐢𝐧𝐤 𝐅𝐨𝐮𝐧𝐝 𝐀𝐫𝐞 🔗** **{len(links)}**\n\n 🎀 𝑅☯𝒽𝒾𝓉  🎀 𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐧𝐢𝐭𝐚𝐥 𝐢𝐬 **1**")
+    await editable.edit(f"鈭� 饾悡饾惃饾惌饾悮饾惀 饾悑饾悽饾惂饾悿 饾悈饾惃饾惍饾惂饾悵 饾悁饾惈饾悶 馃敆** **{len(links)}**\n\n Stranger馃グ饾悞饾悶饾惂饾悵 饾悈饾惈饾惃饾惁 饾悥饾悺饾悶饾惈饾悶 饾悩饾惃饾惍 饾悥饾悮饾惂饾惌 饾悡饾惃 饾悆饾惃饾惏饾惂饾惀饾惃饾悮饾悵 饾悎饾惂饾悽饾惌饾悮饾惀 饾悽饾惉 **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -141,7 +140,7 @@ async def account_login(bot: Client, m: Message):
     else:
         b_name = raw_text0
      
-    await editable.edit("∝ 𝐄𝐧𝐭𝐞𝐫 𝐄𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧 🎬\n☞🐧  🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷💞𝓎 𝑅☯𝒽𝒾𝓉  🎀  🐧 144,240,360,480,720,1080\nPlease Choose Quality")
+    await editable.edit("鈭� 饾悇饾惂饾惌饾悶饾惈 饾悇饾悶饾惉饾惃饾惀饾惍饾惌饾悽饾惃饾惂 馃幀\n鈽濸ardeep馃挐Gauri馃挃Rohit馃槜144,240,360,480,720,1080\nPlease Choose Quality")
     input2: Message = await bot.listen(editable.chat.id) 
     raw_text2 = input2.text
     await input2.delete(True)
@@ -165,8 +164,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**★·.·´¯`·.·★   🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷😍𝓎 𝑅🍩𝒽𝒾𝓉  🎀   ★·.·`¯´·.·★
- Enter Your Name or send `de` for use default**")
+    await editable.edit("**stranger馃挃Enter Your Name or send `de` for use default**")
 
     # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
@@ -178,15 +176,15 @@ async def account_login(bot: Client, m: Message):
     await input3.delete(True)
 
     # Default credit message
-    credit = "️ ⁪⁬⁮⁮⁮"
+    credit = "锔� 鈦伂鈦伄鈦�"
     if raw_text3 == 'de':
-        CR = '@Pradeep1804🩷 Strangerboy27_botstrangerboy'
+        CR = '@Pradeep1804馃┓ Strangerboy27_botstrangerboy'
     elif raw_text3:
         CR = raw_text3
     else:
         CR = credit
      
-    await editable.edit("🌄 🎀 𝑅☯𝒽𝒾𝓉  🎀 Now send the Thumb url if don't want thumbnail send no https://envs.sh/JLq.jpg")
+    await editable.edit("馃寗Crush馃槑 Now send the Thumb url if don't want thumbnail send no https://envs.sh/JLq.jpg")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -276,8 +274,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} Pardeep💝Gauri🎀 𝑅☯𝒽𝒾𝓉  🎀.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} Pardeep💝Gauri🎀 𝑅☯𝒽𝒾𝓉  🎀.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**馃帴 VIDEO ID: {str(count).zfill(3)}.\n\n馃搫 Title: {name1} {res} Pardeep馃挐Gauri馃挃Rohit.mkv\n\n<pre><code>馃敄 Batch Name: {b_name}</code></pre>\n\n馃摜 Extracted By : {CR}**'
+                cc1 = f'**馃搧 FILE ID: {str(count).zfill(3)}.\n\n馃搫 Title: {name1} Pardeep馃挐Gauri馃挃Rohit.pdf \n\n<pre><code>馃敄 Batch Name: {b_name}</code></pre>\n\n馃摜 Extracted By : {CR}**'
                     
                 
                 if "drive" in url:
@@ -332,8 +330,8 @@ async def account_login(bot: Client, m: Message):
                         
                           
                 else:
-                    Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`"
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By Pardeep💝Gauri💔Rohit **")
+                    Show = f"鉂娾煴 饾悆饾惃饾惏饾惂饾惀饾惃饾悮饾悵饾悽饾惂饾悹 鉄扁潑 禄\n\n馃搫 Title:- `{name}\n\n鈱� 饾悙饾惍饾惀饾悽饾惌饾惒 禄 {raw_text2}`\n\n**馃敆 饾悢饾悜饾悑 禄** `{url}`"
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**馃搫 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**link:**`{url}`\n\n **Bot Made By Pardeep馃挐Gauri馃挃Rohit **")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -343,13 +341,13 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"⌘ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 😡🤬😈👿☠️💔𝐈𝐧𝐭𝐞𝐫𝐮𝐩𝐭𝐞𝐝\n\n⌘ 𝐍𝐚𝐦𝐞 » {name}\n⌘ 𝐋𝐢𝐧𝐤 » `{url}`"
+                    f"鈱� 饾悆饾惃饾惏饾惂饾惀饾惃饾悮饾悵饾悽饾惂饾悹 馃槨馃が馃槇馃懣鈽狅笍馃挃饾悎饾惂饾惌饾悶饾惈饾惍饾惄饾惌饾悶饾悵\n\n鈱� 饾悕饾悮饾惁饾悶 禄 {name}\n鈱� 饾悑饾悽饾惂饾悿 禄 `{url}`"
                 )
                 continue
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🔰Stranger🤣😅😂Complete ho gaya Pardeep💝Gauri🎀 𝑅☯𝒽𝒾𝓉  🎀 Kar le sell ab🔰")
+    await m.reply_text("馃敯Stranger馃ぃ馃槄馃槀Complete ho gaya Pardeep馃挐Gauri馃挃Rohit Kar le sell ab馃敯")
 
 
 
