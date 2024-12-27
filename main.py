@@ -77,12 +77,13 @@ async def main():
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-       "𝐇𝐞𝐥𝐥𝐨 ❤️\n\n◆〓◆ ❖ (¯`·.¸¸.-> °º   🎀  𝒫𝒶𝓇𝒹𝑒𝑒𝓅💝𝒢𝒶𝓊𝓇𝒾💔𝑅💞𝒽𝒾𝓉  🎀   º° >-.¸¸.·`¯( ❖ ™ ◆〓◆\n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /GAURI Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
+       "𝐇𝐞𝐥𝐥𝐨 ❤️\n\n◆〓◆ ❖ ★·.·´¯`·.·★   🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷😍𝓎 𝑅🍩𝒽𝒾𝓉  🎀   ★·.·`¯´·.·★
+🎀 𝑅☯𝒽𝒾𝓉  🎀 ❖ ™ ◆〓◆\n\n❈ I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me ⟰ /STRANGER Command And Then Follow Few Steps..", reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/+gnmRbwms4jg0MDg1") ],
                     [
-                    InlineKeyboardButton("✜ Pradeep1804🩷 ✜" ,url="https://t.me/Pradeep1804") ],
+                    InlineKeyboardButton("✜ @Strangerboy27_bot_strangerboy ✜" ,url="https://t.me/Strangerboy27_bot_strangerboy") ],
                     [
                     InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/+XJFAdIa3Vw5iN2M9") ]                               
             ]))
@@ -94,9 +95,9 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["GAURI"]))
+@bot.on_message(filters.command(["STRANGER"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('stranger 🥰𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐀 𝐓𝐱𝐭 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐇𝐞𝐫𝐞 ⏍')
+    editable = await m.reply_text('🐧  🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷💞𝓎 𝑅☯𝒽𝒾𝓉  Send here txt file  🎀  🐧 ⏍')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -126,7 +127,7 @@ async def account_login(bot: Client, m: Message):
            os.remove(x)
            return
    
-    await editable.edit(f"∝ 𝐓𝐨𝐭𝐚𝐥 𝐋𝐢𝐧𝐤 𝐅𝐨𝐮𝐧𝐝 𝐀𝐫𝐞 🔗** **{len(links)}**\n\n Stranger🥰𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐧𝐢𝐭𝐚𝐥 𝐢𝐬 **1**")
+    await editable.edit(f"∝ 𝐓𝐨𝐭𝐚𝐥 𝐋𝐢𝐧𝐤 𝐅𝐨𝐮𝐧𝐝 𝐀𝐫𝐞 🔗** **{len(links)}**\n\n 🎀 𝑅☯𝒽𝒾𝓉  🎀 𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐖𝐡𝐞𝐫𝐞 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐈𝐧𝐢𝐭𝐚𝐥 𝐢𝐬 **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -140,7 +141,7 @@ async def account_login(bot: Client, m: Message):
     else:
         b_name = raw_text0
      
-    await editable.edit("∝ 𝐄𝐧𝐭𝐞𝐫 𝐄𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧 🎬\n☞Pardeep💝Gauri💔Rohit😗144,240,360,480,720,1080\nPlease Choose Quality")
+    await editable.edit("∝ 𝐄𝐧𝐭𝐞𝐫 𝐄𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧 🎬\n☞🐧  🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷💞𝓎 𝑅☯𝒽𝒾𝓉  🎀  🐧 144,240,360,480,720,1080\nPlease Choose Quality")
     input2: Message = await bot.listen(editable.chat.id) 
     raw_text2 = input2.text
     await input2.delete(True)
@@ -164,7 +165,8 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**stranger💔Enter Your Name or send `de` for use default**")
+    await editable.edit("**★·.·´¯`·.·★   🎀  𝒮𝓉𝓇𝒶𝓃𝑔𝑒𝓇 𝒷😍𝓎 𝑅🍩𝒽𝒾𝓉  🎀   ★·.·`¯´·.·★
+ Enter Your Name or send `de` for use default**")
 
     # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
@@ -184,7 +186,7 @@ async def account_login(bot: Client, m: Message):
     else:
         CR = credit
      
-    await editable.edit("🌄Crush😎 Now send the Thumb url if don't want thumbnail send no https://envs.sh/JLq.jpg")
+    await editable.edit("🌄 🎀 𝑅☯𝒽𝒾𝓉  🎀 Now send the Thumb url if don't want thumbnail send no https://envs.sh/JLq.jpg")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -274,8 +276,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} Pardeep💝Gauri💔Rohit.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} Pardeep💝Gauri💔Rohit.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} Pardeep💝Gauri🎀 𝑅☯𝒽𝒾𝓉  🎀.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} Pardeep💝Gauri🎀 𝑅☯𝒽𝒾𝓉  🎀.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                     
                 
                 if "drive" in url:
@@ -347,7 +349,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🔰Stranger🤣😅😂Complete ho gaya Pardeep💝Gauri💔Rohit Kar le sell ab🔰")
+    await m.reply_text("🔰Stranger🤣😅😂Complete ho gaya Pardeep💝Gauri🎀 𝑅☯𝒽𝒾𝓉  🎀 Kar le sell ab🔰")
 
 
 
